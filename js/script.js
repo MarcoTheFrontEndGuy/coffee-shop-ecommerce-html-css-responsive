@@ -15,7 +15,7 @@ menuIcon.addEventListener("click", showHideMenu);
 
 // ========================================================
 
-const cartContainer = document.querySelector('.cart-items-container');
+const cartContainer = document.querySelector('.header__cart');
 const cartIcon = document.getElementById("cart-btn");
 
 function showHideCart() {
@@ -30,7 +30,7 @@ cartIcon.addEventListener("click", showHideCart);
 
 
 const headerSearchIcon = document.getElementById("search-btn");
-const headerSearch = document.querySelector(".search-form");
+const headerSearch = document.querySelector(".header__search-form");
 
 
 function showHideSearchBar() {

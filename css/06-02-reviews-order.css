@@ -1,0 +1,10 @@
+
+.reviews__container__review__header { order: 3; }
+
+.rating-stars { order: 4; }
+
+.reviews__container__review__quote-icon { order: 0 }
+
+.reviews__container__review__p { order: 1 }
+
+.reviews_container__review__profile-img {  order: 2}

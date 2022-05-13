@@ -1,0 +1,135 @@
+
+
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;        /* html { font-size: 62.5%  ////9rem = 144px */
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+
+section {
+    padding: 2rem 7%;
+    margin: 80px 0 80px 0;
+}
+
+section > header > h2 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem; 
+}
+
+section > header > h2 > span {
+    text-transform: uppercase;
+    color: brown;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .7rem 3rem;
+    font-size: 20px;
+    color: #fff;
+    background-color: #5C1E10;
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+}
+
+
+
+
+/* media queries  */
+@media (max-width: 991px) {
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form {
+        width: 90vw;
+        left: 5vw;
+        right: 5vw;
+    }
+
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
+}

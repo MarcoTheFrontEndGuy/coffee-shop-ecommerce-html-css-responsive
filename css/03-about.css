@@ -1,0 +1,32 @@
+.about__content {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.about__content__image {
+    flex: 1 1 45rem;
+}
+
+.about__content__image img {
+    width: 100%;
+}
+
+.about__content__text {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+     
+.about__content__text h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+    
+.about__content__text P {
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+

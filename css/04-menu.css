@@ -1,0 +1,37 @@
+.menu__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu__container__item { 
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+.menu__container__item__img {
+    height: 10rem;
+}
+    
+.menu__container__item__h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu__container__item__price { 
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.menu__container__item__price span { 
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.menu__container__item:hover {
+    background-color: #2E0F08;
+}
+    
+
