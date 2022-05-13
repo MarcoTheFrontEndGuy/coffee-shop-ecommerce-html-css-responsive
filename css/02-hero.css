@@ -1,0 +1,47 @@
+section {
+    padding: 2rem 7%;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/home-img-darker.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.hero__header {
+    padding: 4rem 0 3.5rem 0;
+}
+
+.hero__header__h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+ }
+ 
+ .hero__header__h1 span {
+     color: var(--main-color);
+ }
+
+.hero__header {
+    max-width: 60rem;
+}
+
+.hero__header__h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+}
+
+.hero__header__p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+

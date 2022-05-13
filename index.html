@@ -14,36 +14,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- custom css  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/00-style.css">
+    <link rel="stylesheet" href="css/01-01-header.css">
+    <link rel="stylesheet" href="css/01-02-header-cart.css">
+    <link rel="stylesheet" href="css/01-03-header-search.css">
+    <link rel="stylesheet" href="css/02-hero.css">
+    <link rel="stylesheet" href="css/03-about.css">
+    <link rel="stylesheet" href="css/04-menu.css">
+    <link rel="stylesheet" href="css/05-products.css">
+    <link rel="stylesheet" href="css/06-01-reviews.css">
+    <link rel="stylesheet" href="css/06-02-reviews-order.css">
+    <link rel="stylesheet" href="css/07-contact.css">
+    <link rel="stylesheet" href="css/08-footer.css">
 
     <title>complete responsive coffee shop website</title>
 
 </head>
 <body>
     
+
+    <!-- HEADER MARCO CODE ---------- -->
+    <!-- HEADER MARCO CODE ---------- -->
+    <!-- HEADER MARCO CODE ---------- -->
+    <!-- HEADER MARCO CODE ---------- -->
     <!-- header section starts  -->
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="images/logo.png" alt="">
+    <header class="header" id="header">
+        <a href="#" class="header__logo">
+            <img src="images/logo.png" class="header__logo__img" alt="">
         </a>
 
-        <nav class="navbar" id="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#menu">menu</a>
-            <a href="#products">products</a>
-            <a href="#review">review</a>
-            <a href="#contact">contact</a>
-            <a href="#blogs">blogs</a>
+        <nav class="header__navbar" id="navbar">
+            <a href="#hero" class="header__navbar__a">home</a>
+            <a href="#about" class="header__navbar__a">about</a>
+            <a href="#menu" class="header__navbar__a">menu</a>
+            <a href="#products" class="header__navbar__a">products</a>
+            <a href="#review" class="header__navbar__a">review</a>
+            <a href="#contact" class="header__navbar__a">contact</a>
+            <a href="#blogs" class="header__navbar__a">blogs</a>
         </nav>
 
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="header__icons">
+            <i class="fas fa-search header__icons__icon" id="search-btn"></i>
+            <i class="fas fa-shopping-cart header__icons__icon" id="cart-btn"></i>
+            <i class="fas fa-bars header__icons__icon" id="menu-btn"></i>
         </div>
         
-        <form class="search-form">
+        <form class="header__search-form">
             <input type="text" id="search-box" placeholder="search here...">
             <label for="search-box" class="fas fa-search"></label>
         </form>
@@ -51,141 +67,49 @@
 
         <!-- cart items container  -->
         <!-- .header__cart-container    ===== change this later -->
-        <div class="cart-items-container">
+        <div class="header__cart">
             
             <!-- cart item 1 -->
-            <div class="cart-item">
+            <div class="header__cart__item">
                 <span class="fas fa-times"></span>
                 <img src="images/cart-item-1.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">$15.99/</div>
+                <div class="header__cart__item__content">
+                    <h3 class="header__cart__item__content__h3">cart item 01</h3>
+                    <p class="header__cart__item__content__price">$15.99/</p>
                 </div>
             </div>
             <!-- cart item 1 -->
             <!-- cart item 2 -->
-            <div class="cart-item">
+            <div class="header__cart__item">
+                <span class="fas fa-times"></span>
                 <img src="images/cart-item-2.png" alt="">
-                <div class="content">
-                    <h3>cart item 02</h3>
-                    <div class="price">$15.99/</div>
+                <div class="header__cart__item__content">
+                    <h3 class="header__cart__item__content__h3">cart item 01</h3>
+                    <p class="header__cart__item__content__price">$15.99/</p>
                 </div>
-                <span class="fas fa-times"></span> 
             </div>
             <!-- cart item 2 -->
             <!-- cart item 3 -->
-            <div class="cart-item">
+            <div class="header__cart__item">
                 <span class="fas fa-times"></span>
                 <img src="images/cart-item-3.png" alt="">
-                <div class="content">
-                    <h3>cart item 03</h3>
-                    <div class="price">$15.99/</div>
-                </div>                    
-            </div>
-            <!-- cart item 3 -->
-            <!-- cart item 4 -->
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/cart-item-4.png" alt="">
-                <div class="content">
-                    <h3>cart item 04</h3>
-                    <div class="price">$15.99/</div>
-                </div>                    
-            </div>
-            <!-- cart item 4 -->
-            <!-- cart-container checkout button  -->
-            
-            <a href="#" class="btn">check out</a>
-            <!-- cart-container checkout button  -->
-        </div>
-        <!-- ends cart items container  -->
-
-        </header>
-    <!-- header section ends  -->
-
-
-
-
-
-
-
-    
-    <!-- HEADER MARCO CODE ---------- -->
-    <!-- HEADER MARCO CODE ---------- -->
-    <!-- HEADER MARCO CODE ---------- -->
-    <!-- HEADER MARCO CODE ---------- -->
-    <!-- header section starts  -->
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="images/logo.png" alt="">
-        </a>
-
-        <nav class="navbar" id="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#menu">menu</a>
-            <a href="#products">products</a>
-            <a href="#review">review</a>
-            <a href="#contact">contact</a>
-            <a href="#blogs">blogs</a>
-        </nav>
-
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>
-        
-        <form class="search-form">
-            <input type="text" id="search-box" placeholder="search here...">
-            <label for="search-box" class="fas fa-search"></label>
-        </form>
-
-
-        <!-- cart items container  -->
-        <!-- .header__cart-container    ===== change this later -->
-        <div class="cart-items-container">
-            
-            <!-- cart item 1 -->
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/cart-item-1.png" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">$15.99/</div>
+                <div class="header__cart__item__content">
+                    <h3 class="header__cart__item__content__h3">cart item 01</h3>
+                    <p class="header__cart__item__content__price">$15.99/</p>
                 </div>
             </div>
-            <!-- cart item 1 -->
-            <!-- cart item 2 -->
-            <div class="cart-item">
-                <img src="images/cart-item-2.png" alt="">
-                <div class="content">
-                    <h3>cart item 02</h3>
-                    <div class="price">$15.99/</div>
-                </div>
-                <span class="fas fa-times"></span> 
-            </div>
-            <!-- cart item 2 -->
-            <!-- cart item 3 -->
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/cart-item-3.png" alt="">
-                <div class="content">
-                    <h3>cart item 03</h3>
-                    <div class="price">$15.99/</div>
-                </div>                    
-            </div>
             <!-- cart item 3 -->
             <!-- cart item 4 -->
-            <div class="cart-item">
+            <div class="header__cart__item">
                 <span class="fas fa-times"></span>
                 <img src="images/cart-item-4.png" alt="">
-                <div class="content">
-                    <h3>cart item 04</h3>
-                    <div class="price">$15.99/</div>
-                </div>                    
+                <div class="header__cart__item__content">
+                    <h3 class="header__cart__item__content__h3">cart item 01</h3>
+                    <p class="header__cart__item__content__price">$15.99/</p>
+                </div>
             </div>
             <!-- cart item 4 -->
+
             <!-- cart-container checkout button  -->
             
             <a href="#" class="btn">check out</a>
@@ -203,38 +127,33 @@
     <!-- HEADER MARCO CODE ---------- -->
 
 
-
-
-
-
-
-
-
-    <!-- home section starts  -->
-        <section class="home" id="home">
-            <div class="content">
-                <h3>fresh coffee in the morning</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio aliquid neque assumenda dignissimos, fugiat perspiciatis.
+    <!-- hero section starts  -->
+        <section class="hero" id="hero">
+            <header class="hero__header">
+                <h1 class="hero__header__h1">fresh coffee in the morning</h1>
+                <p class="hero__header__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio aliquid neque assumenda dignissimos, fugiat perspiciatis.
                 </p>
                 <a href="#" class="btn">get yours now</a>
-            </div>
+            </header>
         </section>
-    <!-- home section ends  -->
-
+    <!-- hero section ends  -->
 
     <!-- about section start -->
         <section class="about" id="about">
-            <h1 class="heading"><span>about</span> us</h1>
+            <header class="about__header">
+                <h2 class="about__header__h2"><span>about</span> us</h2>
+            </header>
+            <!-- <h1 class="heading"><span>about</span> us</h1> -->
 
-            <div class="row">
-                <div class="image">
+            <div class="about__content">
+                <div class="about__content__image">
                     <img src="images/about-img.jpeg" alt="">
                 </div>
-                <div class="content">
-                    <h3>What makes our coffee special?</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat tenetur eius dolore alias quisquam tempora unde deserunt doloribus provident magni?
+                <div class="about__content__text">
+                    <h3 class="about__content__text__h3">What makes our coffee special?</h3>
+                    <p class="about__content__text__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat tenetur eius dolore alias quisquam tempora unde deserunt doloribus provident magni?
                     </p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sequi! Iusto cum quas maiores aut!
+                    <p class="about__content__text__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sequi! Iusto cum quas maiores aut!
                     </p>
                     <a href="#" class="btn">learn more</a>
                 </div>
@@ -245,57 +164,62 @@
 
     <!-- menu section starts  -->
         <section class="menu" id="menu">
-            <h1 class="heading">our <span>menu</span> </h1>
-            <div class="box-container">
+            <header class="menu__header">
+                <h1 class="heading">our <span>menu</span> </h1>
+            </header>
+
+            <div class="menu__container">
 
                 <!-- menu item 1 starts -->
-                <div class="box">
-                    <img src="images/menu-1.png" alt="">
-                    <h3>tasty and healthy</h3>
-                    <p class="price">$15.99 <span>20.99</span></p>
+                <div class="menu__container__item">
+                    <img class="menu__container__item__img" src="images/menu-1.png" alt="">
+                    <h3 class="menu__container__item__h3">tasty and healthy</h3>
+                    <p class="menu__container__item__price">$15.99 <span>20.99</span></p>
                     <a href="#" class="btn">add to cart</a>
                 </div>  
                 <!-- menu item 1 ends -->
                 <!-- menu item 2 starts -->
-                <div class="box">
-                    <img src="images/menu-2.png" alt="">
-                    <h3>tasty and healthy</h3>
-                    <p class="price">$15.99 <span>20.99</span></p>
+                <div class="menu__container__item">
+                    <img class="menu__container__item__img" src="images/menu-2.png" alt="">
+                    <h3 class="menu__container__item__h3">tasty and healthy</h3>
+                    <p class="menu__container__item__price">$15.99 <span>20.99</span></p>
                     <a href="#" class="btn">add to cart</a>
                 </div>  
                 <!-- menu item 2 ends -->
                 <!-- menu item 3 starts -->
-                <div class="box">
-                    <img src="images/menu-3.png" alt="">
-                    <h3>tasty and healthy</h3>
-                    <p class="price">$15.99 <span>20.99</span></p>
+                <div class="menu__container__item">
+                    <img class="menu__container__item__img" src="images/menu-3.png" alt="">
+                    <h3 class="menu__container__item__h3">tasty and healthy</h3>
+                    <p class="menu__container__item__price">$15.99 <span>20.99</span></p>
                     <a href="#" class="btn">add to cart</a>
                 </div>  
                 <!-- menu item 3 ends -->
-                <!-- menu item 4  starts-->
-                <div class="box">
-                    <img src="images/menu-4.png" alt="">
-                    <h3>tasty and healthy</h3>
-                    <p class="price">$15.99 <span>20.99</span></p>
+                <!-- menu item 4 starts -->
+                <div class="menu__container__item">
+                    <img class="menu__container__item__img" src="images/menu-4.png" alt="">
+                    <h3 class="menu__container__item__h3">tasty and healthy</h3>
+                    <p class="menu__container__item__price">$15.99 <span>20.99</span></p>
                     <a href="#" class="btn">add to cart</a>
                 </div>  
                 <!-- menu item 4 ends -->
                 <!-- menu item 5 starts -->
-                <div class="box">
-                    <img src="images/menu-5.png" alt="">
-                    <h3>tasty and healthy</h3>
-                    <p class="price">$15.99 <span>20.99</span></p>
+                <div class="menu__container__item">
+                    <img class="menu__container__item__img" src="images/menu-5.png" alt="">
+                    <h3 class="menu__container__item__h3">tasty and healthy</h3>
+                    <p class="menu__container__item__price">$15.99 <span>20.99</span></p>
                     <a href="#" class="btn">add to cart</a>
                 </div>  
                 <!-- menu item 5 ends -->
-                <!-- menu item 6 starts-->
-                <div class="box">
-                    <img src="images/menu-6.png" alt="">
-                    <h3>tasty and healthy</h3>
-                    <p class="price">$15.99 <span>20.99</span></p>
+                <!-- menu item 6 starts -->
+                <div class="menu__container__item">
+                    <img class="menu__container__item__img" src="images/menu-6.png" alt="">
+                    <h3 class="menu__container__item__h3">tasty and healthy</h3>
+                    <p class="menu__container__item__price">$15.99 <span>20.99</span></p>
                     <a href="#" class="btn">add to cart</a>
                 </div>  
                 <!-- menu item 6 ends -->
+
+
                 
             </div>
         </section>
@@ -304,81 +228,87 @@
 
     <!-- products section starts  -->
         <section class="products" id="products">
-            <h1 class="heading">our <span>products</span> </h1>
-            <div class="box-container">
+            <header class="products__header">
+                <h2 class="products__header__h2">our <span>products</span> </h2>
+            </header>
+            <div class="products__container">
                 <!-- product 1 - full with icons, text, price start -->
-                <div class="box">
-                    <div class="icons">
+                <div class="products__container__product">
+                    <div class="products__container__product__icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                     </div>
 
-                    <div class="image">
+                    <div class="products__container__product__image">
                         <img src="images/product-1.png" alt="">
                     </div>
 
-                    <div class="content">
-                        <h3>fresh coffee</h3>
-                        <div class="stars">
+                    <div class="products__container__product__content">
+                        <h3 class="products__container__product__content__h3">fresh coffee</h3>
+                        <div class="rating-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <p class="price">$15.99 <span>$20.99</span></p>
+                        <p class="products__container__product__content__price">$15.99 <span>$20.99</span></p>
                     </div>
                 </div>                
                 <!-- product 1 - full with icons, text, price end-->    
                 <!-- product 2 - full with icons, text, price start -->
-                <div class="box">
-                    <div class="icons">
+                <div class="products__container__product">
+                    <div class="products__container__product__icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                     </div>
 
-                    <div class="image">
+                    <div class="products__container__product__image">
                         <img src="images/product-2.png" alt="">
                     </div>
 
-                    <div class="content">
-                        <h3>fresh coffee</h3>
-                        <div class="stars">
+                    <div class="products__container__product__content">
+                        <h3 class="products__container__product__content__h3">fresh coffee</h3>
+                        <div class="rating-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <p class="price">$15.99 <span>$20.99</span></p>
+                        <p class="products__container__product__content__price">$15.99 <span>$20.99</span></p>
                     </div>
                 </div>                
-                <!-- product 2 - full with icons, text, price ends-->
-                <!-- product 3 - full with icons, text, price starts -->
-                <div class="box">
-                    <div class="icons">
+                <!-- product 2 - full with icons, text, price end-->    
+                <!-- product 3 - full with icons, text, price start -->
+                <div class="products__container__product">
+                    <div class="products__container__product__icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                     </div>
-                    <div class="image">
+
+                    <div class="products__container__product__image">
                         <img src="images/product-3.png" alt="">
                     </div>
-                    <div class="content">
-                        <h3>fresh coffee</h3>
-                        <div class="stars">
+
+                    <div class="products__container__product__content">
+                        <h3 class="products__container__product__content__h3">fresh coffee</h3>
+                        <div class="rating-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <p class="price">$15.99 <span>$20.99</span></p>
+                        <p class="products__container__product__content__price">$15.99 <span>$20.99</span></p>
                     </div>
                 </div>                
-                <!-- product 3 - full with icons, text, price ends-->
+                <!-- product 3 - full with icons, text, price end-->    
+
+
             </div>
             <!--  .box-container - wrapper for each product ends -->
         </section>
@@ -386,60 +316,73 @@
     <!-- products section ends  -->
 
     <!-- review section starts  -->
-    <section class="review" id="review">
-        <h1 class="heading">customer's <span>review</span></h1>
-        <div class="box-container">
+    <section class="reviews" id="review">
+        <header class="reviews__header">
+            <h2 class="reviews__header__h2">customer's <span>review</span></h2>
+        </header>
+        <!-- <h1 class="heading">customer's <span>review</span></h1> -->
+        <div class="reviews__container">
+          
+          
+
             <!-- box 1 starts ==== each customer review  -->
-            <div class="box">
-                <img src="images/quote-img.png" alt="" class="quote">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nemo aut, veniam aspernatur deleniti porro tenetur dolor eum omnis. Tempore obcaecati, et provident dolorem quaerat minima incidunt in doloribus quasi?
-                </p>
-                <img src="images/pic-1.png" alt="" class="user">
-                <h3>John Doe</h3>
-                <div class="stars">
+            <div class="reviews__container__review">
+                <header class="reviews__container__review__header">
+                    <h3>John Doe</h3>
+                </header>
+                <div class="rating-stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
+                <img class="reviews__container__review__quote-icon" src="images/quote-img.png" alt="" >
+                <p class="reviews__container__review__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nemo aut, veniam aspernatur deleniti porro tenetur dolor eum omnis. Tempore obcaecati, et provident dolorem quaerat minima incidunt in doloribus quasi?
+                </p>
+                <img class="reviews_container__review__profile-img" src="images/pic-1.png" alt="" >
             </div>
             <!-- box 1 ends ==== each customer review  -->
+
             <!-- box 2 starts ==== each customer review  -->
-            <div class="box">
-                <img src="images/quote-img.png" alt="" class="quote">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nemo aut, veniam aspernatur deleniti porro tenetur dolor eum omnis. Tempore obcaecati, et provident dolorem quaerat minima incidunt in doloribus quasi?
-                </p>
-                <img src="images/pic-2.png" alt="" class="user">
-                <h3>John Doe</h3>
-                <div class="stars">
+            <div class="reviews__container__review">
+                <header class="reviews__container__review__header">
+                    <h3>John Doe</h3>
+                </header>
+                <div class="rating-stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
+                <img class="reviews__container__review__quote-icon" src="images/quote-img.png" alt="" >
+                <p class="reviews__container__review__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nemo aut, veniam aspernatur deleniti porro tenetur dolor eum omnis. Tempore obcaecati, et provident dolorem quaerat minima incidunt in doloribus quasi?
+                </p>
+                <img class="reviews_container__review__profile-img" src="images/pic-2.png" alt="" >
             </div>
             <!-- box 2 ends ==== each customer review  -->
-            <!-- box 3 start ==== each customer review  -->
-            <div class="box">
-                <img src="images/quote-img.png" alt="" class="quote">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nemo aut, veniam aspernatur deleniti porro tenetur dolor eum omnis. Tempore obcaecati, et provident dolorem quaerat minima incidunt in doloribus quasi?
-                </p>
-                <img src="images/pic-3.png" alt="" class="user">
-                <h3>John Doe</h3>
-                <div class="stars">
+
+            <!-- box 3 starts ==== each customer review  -->
+            <div class="reviews__container__review">
+                <header class="reviews__container__review__header">
+                    <h3>John Doe</h3>
+                </header>
+                <div class="rating-stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
+                <img class="reviews__container__review__quote-icon" src="images/quote-img.png" alt="" >
+                <p class="reviews__container__review__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nemo aut, veniam aspernatur deleniti porro tenetur dolor eum omnis. Tempore obcaecati, et provident dolorem quaerat minima incidunt in doloribus quasi?
+                </p>
+                <img class="reviews_container__review__profile-img" src="images/pic-3.png" alt="" >
             </div>
             <!-- box 3 ends ==== each customer review  -->
+
         </div>
-
-
     </section>
     <!-- review section ends  -->
 
@@ -448,24 +391,28 @@
     <!-- contact section starts  -->
 
     <section class="contact" id="contact">
+        <header class="contact__header">
+            <h2 class="contact__header__h2"><span>contact</span> us </h2>
+        </header>
         <h1 class="heading"><span>contact</span> us</h1>
-        <div class="row">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11746.735022442543!2d-8.946715261891848!3d42.604452766737936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f3bef1b746747%3A0x4db06d4ff3cd8cd8!2sA%20Pobra%20do%20Carami%C3%B1al%2C%20A%20Coru%C3%B1a!5e0!3m2!1sen!2ses!4v1652098616712!5m2!1sen!2ses"  allowfullscreen="" loading="lazy" >
+
+        <div class="contact__container">
+            <iframe class="shop-location-google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11746.735022442543!2d-8.946715261891848!3d42.604452766737936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f3bef1b746747%3A0x4db06d4ff3cd8cd8!2sA%20Pobra%20do%20Carami%C3%B1al%2C%20A%20Coru%C3%B1a!5e0!3m2!1sen!2ses!4v1652098616712!5m2!1sen!2ses"  allowfullscreen="" loading="lazy" >
             </iframe>
 
-            <form action="">
-                <h3>get in touch</h3>
-                <label for="" class="inputBox-wrapper">
+            <form class="contact__form" action="">
+                <h3 class="contact__form__h3">get in touch</h3>
+                <label for="user-name" class="contact__form__label">
                     <span class="fas fa-user"></span>
-                    <input type="text" placeholder="name">
+                    <input type="text" placeholder="name" id="user-name">
                 </label>
-                <label for="" class="inputBox-wrapper">
+                <label for="user-email" class="contact__form__label">
                     <span class="fas fa-envelope"></span>
-                    <input type="email" placeholder="email">
+                    <input type="email" placeholder="email" id="user-email">
                 </label>
-                <label for="" class="inputBox-wrapper">
+                <label for="user-phone" class="contact__form__label">
                     <span class="fas fa-phone"></span>
-                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="number" id="user-phone">
                 </label>
                 <input type="submit" value="contact now" class="btn">
             </form>
@@ -496,6 +443,9 @@
         <div class="footer__right">
             <ul class="footer__right__ul">
                 <li><a href="">nihil nobis lorem</a></li>
+                <li><a href="">magni omnis otherm</a></li>
+                <li><a href="">voluptatem quas tirtem</a></li>
+                <li><a href="">foo veritatis soomem</a></li>
                 <li><a href="">magni omnis otherm</a></li>
                 <li><a href="">voluptatem quas tirtem</a></li>
                 <li><a href="">foo veritatis soomem</a></li>
