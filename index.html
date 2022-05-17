@@ -50,28 +50,27 @@
             <a href="#products" class="header__navbar__a">products</a>
             <a href="#review" class="header__navbar__a">review</a>
             <a href="#contact" class="header__navbar__a">contact</a>
-            <!-- <a href="#blogs" class="header__navbar__a">blogs</a> -->
         </nav>
 
         <div class="header__icons">
             <img src="images/header-icons/search.svg" class="header__icons__icon" id="search-btn" alt="">
             <img src="images/header-icons/cart.svg" class="header__icons__icon" id="cart-btn" alt="">
             <img src="images/header-icons/hamburger.svg" class="header__icons__icon" id="menu-btn" alt="">
-            <!-- <i class="fas fa-search header__icons__icon" id="search-btn"></i>
-            <i class="fas fa-shopping-cart header__icons__icon" id="cart-btn"></i>
-            <i class="fas fa-bars header__icons__icon" id="menu-btn"></i> -->
         </div>
         
         <form class="header__search-form">
             <input type="text" id="search-box" placeholder="search here...">
-            <label for="search-box" class="fas fa-search"></label>
+            <label for="search-box"> 
+                <img src="images/header-icons/search.svg" class="header__icons__icon" id="search-btn" alt="">
+            </label>
+            <!-- <label for="search-box" class="fas fa-search"></label> -->
         </form>
 
 
         <!-- cart items container  -->
         <!-- .header__cart-container    ===== change this later -->
         <div class="header__cart">
-            
+            <h4 class="header__cart__title">Your items are ready!</h4>
             <!-- cart item 1 -->
             <div class="header__cart__item">
                 <span class="fas fa-times"></span>
@@ -115,7 +114,7 @@
 
             <!-- cart-container checkout button  -->
             
-            <a href="#" class="btn">check out</a>
+            <a href="" class="btn">check out</a>
             <!-- cart-container checkout button  -->
         </div>
         <!-- ends cart items container  -->
@@ -131,37 +130,58 @@
 
 
     <!-- hero section starts  -->
-        <section class="hero" id="hero">
+        <div class="hero" id="hero">
             <header class="hero__header">
                 <h1 class="hero__header__h1">fresh coffee in the morning</h1>
                 <p class="hero__header__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio aliquid neque assumenda dignissimos, fugiat perspiciatis.
                 </p>
-                <a href="#" class="btn">get yours now</a>
+                <a class="btn">get yours now</a>
             </header>
-        </section>
+        </div>
     <!-- hero section ends  -->
 
-    <!-- about section start -->
-        <section class="about" id="about">
+    <!-- new about section ===== flex-items as padding = starts ======================  -->
+    <section class="about" id="about">
+
+        <div class="about-flex-padding-left"></div>  <!-- div as flexbox item  to add padding  -->
+
+
+
+        <div class="about__container">
+
             <header class="about__header">
-                <h2 class="about__header__h2">about <span>us</span> </h2>
+                <h2 class="about__header__h2">ABOUT <span>US</span> </h2>
             </header>
 
             <div class="about__content">
-                <div class="about__content__image">
-                    <img src="images/about-img.jpeg" alt="">
+
+                <div class="about__content__left">
+                    <img class="about__content__left__img" src="images/about-img.jpeg" alt="">
                 </div>
-                <div class="about__content__text">
-                    <h3 class="about__content__text__h3">What makes our coffee special?</h3>
-                    <p class="about__content__text__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat tenetur eius dolore alias quisquam tempora unde deserunt doloribus provident magni?
+
+                <div class="about__content__right">
+                    <header class="about__content__right__header">
+                        <h3 class="about__content__right__header__h3">What Makes Our Coffee Special?
+                        </h3>
+                    </header>
+                    <p class="about__content__right__p">Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Fugiat Tenetur Eius Dolore Alias Quisquam Tempora Unde Deserunt Doloribus Provident Magni?
                     </p>
-                    <p class="about__content__text__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sequi! Iusto cum quas maiores aut!
+                    <p class="about__content__right__p">
+                        Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Consequatur, Sequi! Iusto Cum Quas Maiores Aut!
                     </p>
-                    <a href="#" class="btn">learn more</a>
+                    <button class="about__btn btn">Learn more</button>
                 </div>
             </div>
-        </section>
-    <!-- about section end  -->
+        </div>
+        <!-- .about__container ends - the code for the section goes here  -->
+
+
+        <div class="about-flex-padding-right"></div>  <!-- div as flexbox item  to add padding  -->
+
+    </section>
+    <!-- new about section ===== flex-items as padding = ends  ======================  -->
+
+
 
 
     <!-- menu section starts  -->
@@ -220,6 +240,28 @@
                     <a href="#" class="btn">add to cart</a>
                 </div>  
                 <!-- menu item 6 ends -->
+
+
+                
+                <!-- menu item 5 starts -->
+                <div class="menu__container__item">
+                    <img class="menu__container__item__img" src="images/menu-5.png" alt="">
+                    <h3 class="menu__container__item__h3">tasty and healthy</h3>
+                    <p class="menu__container__item__price">$15.99 <span>20.99</span></p>
+                    <a href="#" class="btn">add to cart</a>
+                </div>  
+                <!-- menu item 5 ends -->
+                <!-- menu item 6 starts -->
+                <div class="menu__container__item">
+                    <img class="menu__container__item__img" src="images/menu-6.png" alt="">
+                    <h3 class="menu__container__item__h3">tasty and healthy</h3>
+                    <p class="menu__container__item__price">$15.99 <span>20.99</span></p>
+                    <a href="#" class="btn">add to cart</a>
+                </div>  
+                <!-- menu item 6 ends -->
+
+
+ 
 
 
                 
@@ -396,7 +438,7 @@
         <header class="contact__header">
             <h2 class="contact__header__h2">contact <span>us</span></h2>
         </header>
-        <h3 class="heading"><span>contact</span> us</h3>
+        <!-- <h3 class="heading"><span>contact</span> us</h3> -->
 
         <div class="contact__container">
             <iframe class="shop-location-google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11746.735022442543!2d-8.946715261891848!3d42.604452766737936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f3bef1b746747%3A0x4db06d4ff3cd8cd8!2sA%20Pobra%20do%20Carami%C3%B1al%2C%20A%20Coru%C3%B1a!5e0!3m2!1sen!2ses!4v1652098616712!5m2!1sen!2ses"  allowfullscreen="" loading="lazy" >
@@ -416,6 +458,7 @@
                     <span class="fas fa-phone"></span>
                     <input type="text" placeholder="number" id="user-phone">
                 </label>
+                <!-- <input type="submit" value="contact now" class="btn"> -->
                 <input type="submit" value="contact now" class="btn">
             </form>
         </div>
@@ -427,11 +470,10 @@
 
     <!-- footer section starts  -->
     <footer class="footer">
-        <div class="footer__logo">
-            <h2>Let's all agree that this is a great website </h2>
-            <!-- <img src="images/logo.png" alt="" class="footer__logo__img"> -->
-        </div>
         <div class="footer__left">
+            <div class="footer__logo">
+                <h2>Let's all agree that this is a great website </h2>
+            </div>
             <p class="footer__left__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p> 
             <p> Accusamus, veritatis corrupti dolor maxime incidunt nulla consectetur perspiciatis accusantium sunt 
@@ -458,14 +500,7 @@
                 <li>
                     <a href="">nihil nobis lorem</a>
                 </li> 
-                <!-- <li>
-                    <i class="fab fa-reddit-alien" style="font-size:16px; color: #526789; margin-right: 10px" ></i>
-                    <a href="">magni omnis otherm</a>
-                </li> -->
-                <!-- <li>
-                    <i class="fab fa-android" style="font-size:16px; color: #526789; margin-right: 10px"></i>
-                    <a href="">voluptatem quas</a>
-                </li>  -->
+            
                 <li>
                     <i class="fab fa-aws" style="font-size:16px; color: #d39f47; margin-right:10px; padding:5px; border-radius: 50%; background-color: #333;"></i>
                     <a href="">foo veritatis</a>
@@ -507,8 +542,26 @@
                     <i class="fab fa-youtube"></i>                
                 </div>
             
-     
             </div>
+        </div>
+
+        <div class="footer__bottom-mobile">    
+            <div class="footer__right__text footer__right__text-only-mobile">
+                <h3 class="footer__right__text__h3">Marco Antonio Estors</h3>
+                <h4 class="footer__right__text__h4">Professional Front End Developer</h4>
+                <div class="footer__right__icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-twitch"></i>
+                    <i class="fab fa-youtube"></i>                
+                </div>
+                
+                
+            </div>
+
+            <p class="footer__right__text__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex commodi ea? Unde aperiam vel suscipit pariatur non incidunt eveniet.</p>
+            <p class="footer__copyright footer__copyright-mobile">&copy; 2022 All Rights Reserved</p>
+
         </div>
     </footer>
     <!-- footer section ends  -->

@@ -1,29 +1,39 @@
-section {
+/* section {
     padding: 2rem 7%;
-}
+} */
 
+/* section {
+    padding: 2rem 7%;
+    margin: 0px 0px 0px 0px;
+} */
 .hero {
-    min-height: 100vh;
+    min-height: calc(100vh - 80px); 
+    /* margin-top: 80px; */
+    margin-top: 5.9vw;
+    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     background-image: url(../images/home-img-darker.jpg);
     background-repeat: no-repeat; 
     background-size: cover;
+    background-position: center;
 }
 
 .hero__header {
-    padding: 4rem 0 3.5rem 0;
+    padding: 4rem 0 3.5rem 7%;
 }
 
 .hero__header__h1 {
     text-align: center;
     font-size: 4rem;
-    color: #fff;
+    /* color: #fff; */
+    color: var(--white);
     text-transform: uppercase;
  }
  
  .hero__header__h1 span {
-     color: var(--main-color);
+     /* color: var(--main-color); */
+     color: var(--brown-light);
  }
 
 .hero__header {
@@ -33,7 +43,9 @@ section {
 .hero__header__h1 {
     font-size: 6rem;
     text-transform: uppercase;
-    color: #fff;
+    /* color: #fff; */
+    /* color: var(--white); */
+    color: var(--grey-light);
     text-align: left;
 }
 
@@ -42,6 +54,7 @@ section {
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
-    color: #eee;
+    /* color: #eee; */
+    color: var(--grey-light);
 }
 

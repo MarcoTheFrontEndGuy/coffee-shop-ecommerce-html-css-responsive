@@ -1,31 +1,39 @@
 /* ========= header cart container ======================== */
 
-/* .header .cart-items-container, */
 .header__cart {
     position: absolute;
-    top: 100%;
-    /* right: 0; */
+    top: 104%;
     right: -100%;
     height: calc(100vh - 9.5rem);
-    width: 35rem;
-    background-color: #fff;
-    padding: 0 1.5rem;
+    overflow-y: scroll;
+    width: 28rem;
+    background-color: var(--white);
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-/* .header .cart-items-container.active, */
 .header__cart.active {
-    right: 0;
+    right: -30px;
 }
 
-/* .header .cart-items-container .cart-item { */
+.header__cart__title {
+    font-size: 20px;
+    background-color: var(--brown-dark);
+    color: var(--grey-light);
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
 .header__cart__item {
     position: relative;
     margin: 2rem 0;
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    width: 90%;
 }
 
 .header__cart__item .fa-times {
@@ -34,20 +42,22 @@
     right: 1rem;
     font-size: 2rem;
     cursor: pointer;
-    color: var(--black);
+    color: var(--black-01);
 }
 
 .header__cart__item .fa-times:hover {
-    color: var(--main-color);
+    color: var(--brown-highlight);
 }
 
-/* .header .cart-items-container .cart-item img, */
 .header__cart__item img {
     height: 7rem;
+    height: 4rem;
 }
 
 .header__cart__item__content__h3 {
     font-size: 2rem;
+    font-size: 1.4rem;
+    font-size: 18px;
     color: var(--black);
     padding-bottom: .5rem;
 }
@@ -60,7 +70,10 @@
 /* this button has .btn base style + .btn style (this) */
 .header__cart .btn {
     text-align: center;
+    position: relative;
+    width: 60%;
+    font-size: 1.5rem;
+    margin-top: auto;
 }
 
 
-/* ========= end header cart container ======================== */

@@ -1,32 +1,130 @@
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #010103;
+} */
+
+section.about {
+    padding: 2rem 0;
+    /* padding: 0; */
+    border: 2px solid #777;
+}
+
+.about {
+    width: auto;
+    /* min-height: 100vh; */
+    /* background-color: #0000ff; */
+    margin: 80px 0;
+    display: flex;
+}
+
+.about-flex-padding-left,
+.about-flex-padding-right {
+    flex-basis: 93px;
+    flex-shrink: 4;
+    background-color: rgb(46, 46, 46);
+    background-color: transparent;
+}
+
+.about__container {
+    flex-basis: 1000px;
+    flex-grow: 1;
+}
+
+.about__header {
+    padding-bottom: 35px;
+    /* border: 1px solid blue; */
+}
+
+.about__header__h2 {
+    color: white; 
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
 .about__content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    background: var(--black);
-    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    /* background: #2e0f08; */
 }
 
-.about__content__image {
-    flex: 1 1 45rem;
+.about__content__left {
+    width: 50%;
+    background-color: orange;
+    display: flex;
+    align-items: stretch;
 }
 
-.about__content__image img {
-    width: 100%;
+.about__content__left__img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.about__content__text {
-    flex: 1 1 45rem;
-    padding: 2rem;
-}
-     
-.about__content__text h3 {
-    font-size: 3rem;
-    color: #fff;
-}
-    
-.about__content__text P {
-    font-size: 1.6rem;
+.about__content__right {
+    width: 50%;
+    padding: 20px;
     color: #ccc;
-    padding: 1rem 0;
-    line-height: 1.8;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.about__content__right__p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.about__btn {
+    padding: 9px 22px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 972px) {
+    .about__content {
+        align-items: stretch;
+        gap: 0;
+    }
+}
+
+
+@media screen and (max-width: 626px) {
+    .about__container {
+        max-width: 90%;
+    }
+
+    .about-flex-padding-left,
+    .about-flex-padding-right {
+        width: 35px;
+        background-color: transparent;
+    }
+
+    .about__content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about__content__left {
+        width: 100%;
+    }
+
+    .about__content__right {
+        width: 100%;
+    }
+
 }
 

@@ -1,11 +1,12 @@
 
 let menuIcon = document.getElementById("menu-btn");
-let navbar = document.getElementById("navbar");         
+let navbar = document.querySelector(".header__navbar");         
 
 // I want to create pure functions (DRY - Don't Repeat Yourself) 
 // this function can be used by other listeners
 function showHideMenu() {
     navbar.classList.toggle("active");
+    
 
     cartContainer.classList.remove("active");
     headerSearch.classList.remove("active");
@@ -47,7 +48,24 @@ headerSearchIcon.addEventListener("click", showHideSearchBar);
 
 
 
+// ================================================
+// ================================================
 
+    let btnList = document.querySelectorAll(".btn");
+    
+    function testingButton(e) {
+        e.preventDefault();
+        console.log(e + " element was clicked");
+        // return false;
+    }
+    
+    btnList.forEach((eachButton) => {
+        eachButton.addEventListener("click", testingButton);
+    });
+
+
+// ================================================
+// ================================================
 
 
 

@@ -1,10 +1,24 @@
-
-
 :root {
-    --main-color: #d3ad7f;
+    /* --main-color: #d3ad7f;
     --black: #13131a;
     --bg: #010103;
-    --border: .1rem solid rgba(255, 255, 255, .3);
+    */
+    /* --border: .1rem solid rgba(255, 255, 255, .3);  */
+    --border: 1px solid #4e4e4f; 
+
+    --black: #000000;
+    --black-01: #010103;
+    --black-02: #13131a;
+
+    --grey-light: #ccc;
+    --grey-dark: #4E4E4F;
+
+    --brown-light: #d3ad7f;
+    --brown-dark: #5c1e10;
+    --brown-darker: #2e0f08;
+    --brown-highlight: #a52a2a;
+
+    --white: #ffffff;
 }
 
 * {
@@ -35,12 +49,13 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #fff;
+    background: var(--white);
     border-radius: 5rem;
 }
 
 body {
-    background-color: var(--bg);
+    background-color: var(--black-01);
+    color: var(--grey-light);
 }
 
 
@@ -51,7 +66,7 @@ section {
 
 section > header > h2 {
     text-align: center;
-    color: #fff;
+    color: var(--white);
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem; 
@@ -59,7 +74,9 @@ section > header > h2 {
 
 section > header > h2 > span {
     text-transform: uppercase;
-    color: brown;
+    color: var(--brown-highlight);
+
+
 }
 
 .btn {
@@ -67,10 +84,28 @@ section > header > h2 > span {
     display: inline-block;
     padding: .7rem 3rem;
     font-size: 20px;
-    color: #fff;
-    background-color: #5C1E10;
+    color: var(--white);
+    background-color: var(--brown-dark);
     cursor: pointer;
 }
+
+.btn {
+    margin-top: 1rem;
+    margin-top: 10px;
+    box-shadow: 0 4px 3px var(--black);
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    transition: all .2s;
+    position: relative;
+    top: 0;
+}
+
+.btn:active {
+    top: 4px;
+    box-shadow: 0 0 3px var(--black); 
+}
+
+
 
 .btn:hover {
     letter-spacing: .2rem;
@@ -96,7 +131,7 @@ section > header > h2 > span {
         position: absolute;
         top: 100%;
         right: -100%;
-        background: #fff;
+        background: var(--white);
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }

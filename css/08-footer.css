@@ -9,10 +9,10 @@
     background-color: #0C0C0C;
     display: flex;
     justify-content: space-between;
+ 
     flex-wrap: wrap;
     font-size: 1.2rem;
     line-height: 1.6;
-    min-width: 1050px;
 }
 
 .footer__logo {
@@ -35,9 +35,14 @@
 .footer__left {
     width: 30vw;
     padding: 20px;
+    padding-left: 0;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+
+    justify-content: flex-start;
+    gap: 25px;
 }
 
 .footer__left p:first-child {
@@ -50,7 +55,6 @@
 }
 
 .footer__copyright {
-    color: #526789;
     color: #959596;
 }
 
@@ -59,7 +63,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     margin-left: 2vw;
-    background: #141313;
+    /* background: #141313; */
+    box-shadow: 0 0px 8px #000000;
 }
 
 .footer__right__ul {
@@ -130,4 +135,80 @@
 .footer__right__icons i:not(last-child) {
     margin-right: 15px;
 
+}
+
+
+/* ="footer__bottom-mobile">    
+            <div class="footer__right__text footer__right__text-only-mobile"> */
+
+.footer__bottom-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 1156px) {
+
+    /* .footer__left {
+        justify-content: flex-start;
+        gap: 25px;
+    } */
+
+    .footer__left {
+        /* width: 30vw; */
+        /* padding: 20px; */
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    
+
+    .footer__right {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+        grid-template-columns: 1fr 1fr;
+        /* margin-left: 2vw; */
+        /* background: #141313; */
+        margin-top: 20px;
+        box-shadow: 0 0px 8px #000000;
+    }
+    
+    .footer__right__text {
+        display: none;
+    }
+
+
+
+    /* turn on footer mobile on 1159px or less ======== */
+    .footer__bottom-mobile {
+        display: block;
+    }
+    
+    .footer__right__text-only-mobile {
+        display: block;
+    }
+    /* turn on footer mobile on 1159px or less ======== */
+
+    .footer__copyright {
+        display: none;
+    }
+
+    .footer__copyright-mobile {
+        display: block;
+        margin-top: 30px;
+
+    }
+}
+
+@media screen and (max-width: 816px) {
+    .footer__left {
+        min-width: 100%;
+    }
+
+    .footer__right {
+        min-width: 100%;
+        margin-left: 0
+    }
 }

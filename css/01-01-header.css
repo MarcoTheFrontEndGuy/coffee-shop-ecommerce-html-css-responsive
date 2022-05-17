@@ -1,5 +1,5 @@
 #header {
-    background: var(--bg);
+    background: var(--black-01);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,94 +16,111 @@
     height: 6rem;
 }
 
+.header__navbar {
+    margin-left: auto;
+    margin-right: 5%;
+}
+
 .header__navbar__a {
-    margin: 0 1rem;
+    margin: 0 20px;
     font-size: 1.6rem;
-    color: #fff;
-    color: var(--main-color);
+    color: var(--brown-light);
     border-bottom: .1rem solid transparent;
     padding-bottom: .5rem;
+    cursor: pointer;
 }
 
 .header__navbar__a:hover {
-    color: var(--main-color);
-    border-bottom-color: var(--main-color);
+    border-bottom-color: var(--brown-light); 
 }
 
+/* .header__icons {
+    width: auto;
+} */
 /* each icon - cart, search, menu are i  */
-/* .header__icons div ------------ change this later */
 .header__icons__icon {
-    color: #fff;
     cursor: pointer;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+    height: 26px;
     margin-left: 2rem;
-}
-
-
-/* .header__icons div:hover  -----------------change this later  */
-.header__icons__icon:hover {
-    color: var(--main-color);
+    cursor: pointer;
 }
 
 #menu-btn {
     display: none;
-}
-
-.header__search-form {
-    position: absolute;
-    top: 115%;
-    right: 7%;
-    /* background: #555; */
-    /* background: #fff; */
-    background-color: #000;
-    border: 2px solid #333;
-    width: 50rem;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    padding: 0 1.5rem;
-
-    /* this is the header form and you show it on click  */
-    /* 1. create    2. hide    3. click button and show/hide */
-    /* form initial height = 0  */
-    /* when changes the height grows with fixed point at the top */
-    transform: scaleY(0);        
-    transform-origin: top;
-}
-
-.header__search-form.active {
-    transform: scaleY(1);
-}
-
-/* .header__search-form input     ---------- change this later  */
-.header__search-form input {
-    flex: 1;
-    height: 100%;
-    font-size: 1.6rem;
-    color: var(--black);
-    color: #ccc;
-    text-transform: none;
-    background-color: inherit;
-}
-
-/* .header__search-form label     ---------- change this later  */
-.header__search-form label {
-    cursor: pointer;  
-    font-size: 2.2rem;
-    color: var(--black); 
-    color: #ccc;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    color: var(--main-color);
-}
-
-/* .header__search-form label:hover     ---------- change this later  */
-.header__search-form label:hover {
-    color: var(--main-color);
+    /* cursor: pointer; */
 }
 
 
 
+@media screen and (max-width: 1039px) {
+
+    #header {
+        /* position: relative; */
+        position: fixed;
+        padding: 1.5rem 3%;
+        background: var(--black-01);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .header__logo {
+        order: 1;
+    }
+
+    .header__navbar {
+        order: 3;
+        position: absolute;
+        top: 102%;
+        left: -105%;
+        background-color: rgb(1 1 3 / 97%);
+        width: 33%;
+        min-width: 300px;
+        min-height: 100vh;
+        margin-left: 0;
+        margin-right: 0;
+        border-right: 2px solid #444;
+        transition: all .7s;
+        display: flex;
+        flex-direction: column;
+        padding: 60px 20px 20px 20px;
+ 
+    }
+
+    .header__navbar.active {
+        left: 0;
+    }
+
+    .header__navbar__a {
+        display: block;
+        margin-bottom: 40px;
+        font-size: 22px;
+    }
+
+    .header__icons {
+        order: 2;
+    }
+
+    .header__icons {
+        width: auto;
+        min-width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* each icon - cart, search, menu are i  */
+    .header__icons__icon {
+        cursor: pointer;
+        height: 26px;
+        margin-left: 1.4rem;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+}
 
 
