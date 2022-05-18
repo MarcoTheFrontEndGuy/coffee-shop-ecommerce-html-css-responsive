@@ -8,8 +8,8 @@
 } */
 .hero {
     min-height: calc(100vh - 80px); 
-    /* margin-top: 80px; */
-    margin-top: 5.9vw;
+    margin-top: 80px;
+    /* margin-top: 5.9vw; */
     /* border: 2px solid red; */
     display: flex;
     align-items: center;

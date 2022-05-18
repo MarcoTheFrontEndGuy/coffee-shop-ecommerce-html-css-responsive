@@ -7,13 +7,31 @@ let navbar = document.querySelector(".header__navbar");
 function showHideMenu() {
     navbar.classList.toggle("active");
     
-
     cartContainer.classList.remove("active");
     headerSearch.classList.remove("active");
 }
 
 menuIcon.addEventListener("click", showHideMenu);
 
+// ========================================================
+// ========================================================
+// ========================================================
+// ========================================================
+    const allNavLinks = document.querySelectorAll(".header__navbar__a");
+
+    function nav_Link_Click_To_Remove_Cart_Search_MobileMenu() {
+        navbar.classList.remove("active");
+        cartContainer.classList.remove("active");
+        headerSearch.classList.remove("active");
+    }
+
+
+    allNavLinks.forEach((eachLink) => {
+        eachLink.addEventListener("click", nav_Link_Click_To_Remove_Cart_Search_MobileMenu);
+    });
+    
+// ========================================================
+// ========================================================
 // ========================================================
 
 const cartContainer = document.querySelector('.header__cart');
