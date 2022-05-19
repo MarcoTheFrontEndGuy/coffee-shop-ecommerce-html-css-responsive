@@ -40,7 +40,7 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     cursor: pointer;
     color: var(--black-01);
 }
@@ -50,20 +50,17 @@
 }
 
 .header__cart__item img {
-    height: 7rem;
     height: 4rem;
 }
 
 .header__cart__item__content__h3 {
-    font-size: 2rem;
-    font-size: 1.4rem;
-    font-size: 18px;
+    /* font-size: 18px; */
     color: var(--black);
     padding-bottom: .5rem;
 }
 
 .header__cart__item__content__price {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: var(--main-color);
 }
 
@@ -72,7 +69,7 @@
     text-align: center;
     position: relative;
     width: 60%;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     margin-top: auto;
 }
 

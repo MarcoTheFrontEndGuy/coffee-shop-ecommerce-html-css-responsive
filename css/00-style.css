@@ -1,24 +1,22 @@
 :root {
-    /* --main-color: #d3ad7f;
-    --black: #13131a;
-    --bg: #010103;
-    */
-    /* --border: .1rem solid rgba(255, 255, 255, .3);  */
-    --border: 1px solid #4e4e4f; 
 
     --black: #000000;
     --black-01: #010103;
+    --black-111: #111;
     --black-02: #13131a;
-
+    --black-transparent: rgba(1, 1, 3, 0.97); 
+    
     --grey-light: #ccc;
+    --grey-medium: #999493;
     --grey-dark: #4E4E4F;
-
+    
     --brown-light: #d3ad7f;
     --brown-dark: #5c1e10;
-    --brown-darker: #2e0f08;
+    --brown-darker: #1b0906;
     --brown-highlight: #a52a2a;
 
     --white: #ffffff;
+    --border: 1px solid #4e4e4f; 
 }
 
 * {
@@ -34,7 +32,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     overflow-x: hidden;
     scroll-padding-top: 9rem;        /* html { font-size: 62.5%  ////9rem = 144px */
     scroll-behavior: smooth;
@@ -55,49 +53,45 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background-color: var(--black-01);
-    color: var(--grey-light);
+    color: var(--grey-light);    
+    min-width: 314px;
+    max-width: 1400px;
+
 }
 
 
 section {
     padding: 2rem 7%;
-    margin: 80px 0 80px 0;
+    margin: 5.9vw 0;
 }
 
-section > header > h2 {
+section header h2 {
     text-align: center;
     color: var(--white);
     text-transform: uppercase;
-    padding-bottom: 3.5rem;
+    /* padding-bottom: 3.5rem; */
     font-size: 4rem; 
 }
 
-section > header > h2 > span {
+section header h2 span {
     text-transform: uppercase;
     color: var(--brown-highlight);
-
-
 }
 
+
+
 .btn {
-    margin-top: 1rem;
     display: inline-block;
-    padding: .7rem 3rem;
-    font-size: 20px;
-    color: var(--white);
     background-color: var(--brown-dark);
-    cursor: pointer;
-}
-
-.btn {
-    margin-top: 1rem;
-    margin-top: 10px;
-    box-shadow: 0 4px 3px var(--black);
-    display: inline-block;
+    color: var(--white);
     padding: 1.2rem 3rem;
-    transition: all .2s;
+    /* font-size: 20px; */
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 3px var(--black);
     position: relative;
     top: 0;
+    transition: all .2s;
 }
 
 .btn:active {
@@ -105,13 +99,9 @@ section > header > h2 > span {
     box-shadow: 0 0 3px var(--black); 
 }
 
-
-
 .btn:hover {
     letter-spacing: .2rem;
 }
-
-
 
 
 /* media queries  */
@@ -119,7 +109,6 @@ section > header > h2 > span {
     .header {
         padding: 1.5rem 2rem;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -140,31 +129,25 @@ section > header > h2 > span {
         right: 0;
     }
 
-    .header .navbar a {
-        color: var(--black);
-        display: block;
-        margin: 1.5rem;
-        padding: .5rem;
-        font-size: 2rem;
-    }
-
     .header .search-form {
         width: 90vw;
         left: 5vw;
         right: 5vw;
     }
 
-    .home {
-        background-position: left;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .home .content h3 {
-        font-size: 4.5rem;
-    }
-
-    .home .content p {
-        font-size: 1.5rem;
-    }
 }
+
+
+@media screen and (min-width: 627px) and (max-width: 1200px){
+    h1 { font-size: 6rem}
+    h2 { font-size: 4rem}
+    h3 { font-size: 3.4rem}
+}
+
+
+@media screen and (max-width: 626px) {
+    h1 { font-size: 4rem; }
+    h2 { font-size: 3.2rem; }
+    h3 { font-size: 2.8rem; }
+}
+

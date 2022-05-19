@@ -23,8 +23,7 @@
 
 .contact__form__h3 {
     text-transform: uppercase;
-    font-size: 3.5rem;
-    color: #999493;
+    color: var(--grey-medium);
 }
 
 .contact__form__label {
@@ -32,22 +31,19 @@
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: var(--bg);
     border: var(--border);
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
 .contact__form__label span {
-    font-size: 2rem;
-    color:#8a8a93;
+    color: var(--brown-highlight);
 }
 
 .contact__form__label input {
     width: 100%;
     padding: 2rem;
-    font-size: 1.7rem;
-    color: #fff;
+    color: var(--white);
     text-transform: none;
     background: none;
 }

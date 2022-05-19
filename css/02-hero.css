@@ -1,16 +1,7 @@
-/* section {
-    padding: 2rem 7%;
-} */
 
-/* section {
-    padding: 2rem 7%;
-    margin: 0px 0px 0px 0px;
-} */
 .hero {
     min-height: calc(100vh - 80px); 
     margin-top: 80px;
-    /* margin-top: 5.9vw; */
-    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     background-image: url(../images/home-img-darker.jpg);
@@ -24,37 +15,44 @@
 }
 
 .hero__header__h1 {
-    text-align: center;
-    font-size: 4rem;
-    /* color: #fff; */
-    color: var(--white);
+    /* font-size: 6rem; */
     text-transform: uppercase;
- }
+    color: var(--grey-light);
+    text-align: left;
+}
  
  .hero__header__h1 span {
-     /* color: var(--main-color); */
      color: var(--brown-light);
+     display: block;
  }
 
 .hero__header {
     max-width: 60rem;
 }
 
-.hero__header__h1 {
-    font-size: 6rem;
-    text-transform: uppercase;
-    /* color: #fff; */
-    /* color: var(--white); */
-    color: var(--grey-light);
-    text-align: left;
-}
-
 .hero__header__p {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
-    /* color: #eee; */
     color: var(--grey-light);
 }
 
+
+@media screen and (max-width: 580px) {
+
+    .hero {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .hero__header__h1  {
+        /* font-size: 4rem; */
+    }
+
+    .hero__header__h1 > span {
+        display: block;
+        text-transform: uppercase;
+        /* color: purple; */
+    }
+    
+}
