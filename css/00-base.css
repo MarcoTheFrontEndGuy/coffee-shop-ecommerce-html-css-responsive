@@ -1,5 +1,4 @@
 :root {
-
     --black: #000000;
     --black-01: #010103;
     --black-111: #111;
@@ -14,6 +13,7 @@
     --brown-dark: #5c1e10;
     --brown-darker: #1b0906;
     --brown-highlight: #a52a2a;
+    --brown-rusty-highlight: #AE4404;
 
     --white: #ffffff;
     --border: 1px solid #4e4e4f; 
@@ -53,10 +53,8 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background-color: var(--black-01);
-    color: var(--grey-light);    
     min-width: 314px;
     max-width: 1400px;
-
 }
 
 
@@ -67,25 +65,20 @@ section {
 
 section header h2 {
     text-align: center;
-    color: var(--white);
     text-transform: uppercase;
-    /* padding-bottom: 3.5rem; */
-    font-size: 4rem; 
+    padding-bottom: 3.5rem;
 }
 
 section header h2 span {
     text-transform: uppercase;
-    color: var(--brown-highlight);
+    color: var(--brown-rusty-highlight);
 }
-
-
 
 .btn {
     display: inline-block;
-    background-color: var(--brown-dark);
+    background-color: var(--brown-rusty-highlight);
     color: var(--white);
     padding: 1.2rem 3rem;
-    /* font-size: 20px; */
     margin-top: 10px;
     cursor: pointer;
     box-shadow: 0 4px 3px var(--black);
@@ -120,7 +113,7 @@ section header h2 span {
         position: absolute;
         top: 100%;
         right: -100%;
-        background: var(--white);
+        /* background: var(--white); */
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
@@ -138,7 +131,7 @@ section header h2 span {
 }
 
 
-@media screen and (min-width: 627px) and (max-width: 1200px){
+/* @media screen and (min-width: 627px) and (max-width: 1200px){
     h1 { font-size: 6rem}
     h2 { font-size: 4rem}
     h3 { font-size: 3.4rem}
@@ -149,5 +142,5 @@ section header h2 span {
     h1 { font-size: 4rem; }
     h2 { font-size: 3.2rem; }
     h3 { font-size: 2.8rem; }
-}
+} */
 

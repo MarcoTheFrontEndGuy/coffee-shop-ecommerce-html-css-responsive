@@ -25,13 +25,15 @@
     margin: 0 20px;
     font-size: 1.6rem;
     color: var(--brown-light);
+    color: var(--grey-medium);
     border-bottom: .1rem solid transparent;
     padding-bottom: .5rem;
     cursor: pointer;
 }
 
 .header__navbar__a:hover {
-    border-bottom-color: var(--brown-light); 
+    color: var(--brown-rusty-highlight);
+    border-bottom-color: var(--brown-rusty-highlight);
 }
 
 /* each icon - cart, search, menu are i  */
@@ -90,7 +92,6 @@
     .header__navbar__a {
         display: block;
         margin-bottom: 40px;
-        /* font-size: 22px; */
     }
 
     .header__icons {

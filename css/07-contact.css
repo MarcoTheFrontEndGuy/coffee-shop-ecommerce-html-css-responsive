@@ -2,7 +2,6 @@
 .contact__container {
     display: flex;
     background: var(--black);
-    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -37,7 +36,7 @@
 }
 
 .contact__form__label span {
-    color: var(--brown-highlight);
+    color: var(--brown-rusty-highlight);
 }
 
 .contact__form__label input {
@@ -50,4 +49,14 @@
 
 .contact__form__label > .fas.fa-phone {
     transform: rotate(90deg);
+}
+
+@media screen and (max-width: 740px) {
+    .contact__container {
+        flex-wrap: wrap;
+    }
+
+    .contact__form {
+        padding: 2rem;
+    }
 }

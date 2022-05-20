@@ -11,18 +11,16 @@
 }
 
 .hero__header {
-    padding: 4rem 0 3.5rem 7%;
+    padding: 4rem 0 3.5rem 10%;
 }
 
 .hero__header__h1 {
-    /* font-size: 6rem; */
     text-transform: uppercase;
-    color: var(--grey-light);
     text-align: left;
 }
  
  .hero__header__h1 span {
-     color: var(--brown-light);
+     color: var(--brown-rusty-highlight);
      display: block;
  }
 
@@ -31,10 +29,9 @@
 }
 
 .hero__header__p {
-    /* font-size: 2rem; */
-    font-weight: lighter;
     line-height: 1.8;
-    padding: 1rem 0;
+    padding: 1rem 1rem 1rem 0;
+    color: var(--white);
     color: var(--grey-light);
 }
 
@@ -45,14 +42,5 @@
         padding-left: 10px;
         padding-right: 10px;
     }
-    .hero__header__h1  {
-        /* font-size: 4rem; */
-    }
 
-    .hero__header__h1 > span {
-        display: block;
-        text-transform: uppercase;
-        /* color: purple; */
-    }
-    
 }

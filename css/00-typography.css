@@ -1,115 +1,77 @@
-* {
-    font-family: 'Roboto', sans-serif;
+
+html {font-size: 62.5%;} /*10px*/
+
+/* * { font-family: 'Roboto', sans-serif;  color: #ccc; } */
+* { font-family: 'Roboto', sans-serif;  color: #9b9b9b; }
+
+body { font-family: 'Roboto', sans-serif;  }
+
+h1,h2,h3,h4 { color: #ccc;  }
+
+h1 { font-size: 5.61rem;  }
+
+h2 { font-size: 3.37rem; }
+
+h3 { font-size: 2.25rem;  }
+
+p { font-size: 1.6rem; }
+
+a { font-size: 1.6rem; }
+
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+    font-size: 18px;
+    color: var(--brown-highlight);
 }
 
-
-
-html {  font-size: 62.5%;  }
-
-section header h2 {  font-size: 4rem; }
-
-.btn {  font-size: 20px;  }
-
-
-/* HEADER ==========================  */
-.header__nav__a { font-size: 1.6rem; }
-
-@media screen and (max-width: 1039px) {
-    .header__navbar__a { font-size: 22px; }
-}
-/* HEADER ==========================  */
-/* HEADER CART =========================  */
-.header__cart__item .fa-times { font-size: 2rem; }
-.header__cart__item__content__h3 { font-size: 18px; }
-.header__cart__item__content__price { font-size: 1.5rem; }
-.header__cart .btn { font-size: 1.5rem; }
-/* HEADER CART =========================  */
-/* HEADER SEARCH =========================  */
-.header__search-form input { font-size: 1.6rem; }
-.header__search-form label { font-size: 2.2rem; }
-/* HEADER SEARCH - END  =========================  */
-/* HERO  - START ============================  */
-.hero__header__h1 { font-size: 6rem; }
-.hero__header__p { font-size: 2rem; }
-
-@media screen and (max-width: 580px) {
-    .hero__header__h1  {  font-size: 4rem; }
-}
-/* HERO  - END ===============---=============  */
-/* ABOUT   - START ===================================  */
-.about__header__h2 {  font-size: 40px; }
-h3 {  font-size: 30px;  }
-.about__content__right__p {  font-size: 16px;  }
-.about__btn {  font-size: 20px;  }
-
-@media screen and (max-width: 626px) {
-    .about__header__h2 { font-size: 3.2rem; }
-    .about__content__right__header__h3 { font-size: 2.8rem; }
-}
-/* ABOUT   - END   ===================================  */
-/* MENU   - START =========================================  */
-.menu__container__item__h3 { font-size: 2rem;  }
-.menu__container__item__price {  font-size: 2.5rem;  }
-.menu__container__item__price span {  font-size: 1.5rem;  }
-.menu__container .btn { font-size: 16px;  }
-/* MENU   - END   =========================================  */
-
-/* PRODUCTS       - START ==============================  */
-.products__container__product__icons a { font-size: 2rem;  }
-.products__container__product__content__h3 { font-size: 2.5rem;  }
-.rating-stars i { font-size: 1.7rem;  }
-.products__container__product__content__price { font-size: 2.5rem;  }
-.products__container__product__content__price span { font-size: 1.5rem;  }
-
-/* PRODUCTS       - END   ==============================  */
-/* REVIEWS      - START =========================================  */
-
-.reviews__container__review__quote-left { font-size: 35px; }
-
-.reviews__container__review__header h3 { font-size: 2rem; }
-
-.reviews__container__review__p { font-size: 1.5rem; }
-
-.reviews .rating-stars i { font-size: 1.5rem; }
-/* REVIEWS      - END   =========================================  */
-
-
-/* CONTACT       - START  ========================================  */
-.contact__form__h3 { font-size: 3.5rem; }
-
-.contact__form__label span { font-size: 2rem; }
-
-.contact__form__label input { font-size: 1.7rem; }
-
-/* CONTACT       - END    ========================================  */
+.btn { font-size: 16px; }
 
 
 
-/* FOOTER      - START ============================================  */
 
-.footer {
-    font-size: 1.2rem;
+/* Variations according to the design  ========================================================== */
+
+/* HERO - ==================================================== */
+.hero__header__h1 span {
+    font-family: 'Trocchi', serif;
+    letter-spacing: 2px;
+    font-size: 4rem;
 }
 
-.footer__left p:first-child {
-    font-size: 17px;
+.hero__header__p { font-size: 18px; }
+
+/* ABOUT - =================================================== */
+
+/* MENU - ==================================================== */
+.menu__container__item__h3 { font-size: 20px;  }
+
+/* FOOTER - ================================================== */
+.footer * { font-size: 14px;   }
+
+.footer a { font-size: 12px }
+
+.footer__right__text__p { font-size: 12px; }
+
+.footer__copyright {    font-size: 12px; }
+
+
+@media screen and (max-width: 700px) {
+    .hero__header__h1 span {
+        font-family: 'Trocchi', serif;
+        letter-spacing: 2px;
+        font-size: 3.5rem;
+    }
 }
 
-.footer__right__ul li:first-child a:first-child {
-    font-size: 15px;
+@media screen and (max-width: 500px) {
+
+    h1 { font-size: 5.61rem;  }
+    
+    h2 { font-size: 3.37rem; }
+
+    h3 { font-size: 2.25rem;  }
+
+    p { font-size: 1.777rem;  }
+
 }
 
-.footer__right__text__h4 {
-    font-size: 12px;
-}
-
-.footer__right__icons i {
-    font-size: 15px;
-} 
-
-.footer__right__icons i:hover {
-    font-size: 15px;
-} 
-
-
-/* FOOTER      - END   ============================================  */

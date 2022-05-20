@@ -14,12 +14,17 @@
     /* 1. create    2. hide    3. click button and show/hide */
     /* form initial height = 0  */
     /* when changes the height grows with fixed point at the top */
-    transform: scaleY(0);        
-    transform-origin: top;
+    /* transform: scaleY(0);         */
+    /* transform-origin: top;  */
+    opacity: 0;
+
+    transform: scale(.7);
 }
 
 .header__search-form.active {
-    transform: scaleY(1);
+    /* transform: scaleY(1); */
+    transform: scale(1);
+    opacity: 1;
 }
 
 .header__search-form input {

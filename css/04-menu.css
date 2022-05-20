@@ -9,13 +9,14 @@
     text-align: center;
     border: 2px solid var(--brown-darker);
     background-color: var(--brown-darker); 
+    background-color: var(--black);
     border-radius: 8px;
     padding: 3rem 0;
     margin: 20px;
 }
 
 .menu__container__item:hover{
-    border-color: var(--brown-highlight);
+    border-color: var(--brown-rusty-highlight);
     border-radius: 8px;
 }
 
@@ -24,28 +25,21 @@
 }
     
 .menu__container__item__h3 {
-    color: var(--white);
-    /* font-size: 2rem; */
     padding: 1rem 0;
 }
 
 .menu__container__item__price { 
-    color: var(--white);
-    /* font-size: 2.5rem; */
     padding: .5rem 0;
+    color: var(--white);
 }
 
 .menu__container__item__price span { 
-    /* font-size: 1.5rem; */
     text-decoration: line-through;
 }
 
 .menu__container .btn {
-    /* font-size: 16px; */
     padding: 1rem 2.5rem;
 }
-
-/* ======================= */
 
 
 
