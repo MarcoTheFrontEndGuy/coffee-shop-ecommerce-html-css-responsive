@@ -1,12 +1,11 @@
 
 html {font-size: 62.5%;} /*10px*/
 
-/* * { font-family: 'Roboto', sans-serif;  color: #ccc; } */
 * { font-family: 'Roboto', sans-serif;  color: #9b9b9b; }
 
 body { font-family: 'Roboto', sans-serif;  }
 
-h1,h2,h3,h4 { color: #ccc;  }
+h1,h2,h3,h4 { color: var(--grey-light);  }
 
 h1 { font-size: 5.61rem;  }
 
@@ -20,11 +19,11 @@ a { font-size: 1.6rem; }
 
 .fa, .far, .fas {
     font-family: "Font Awesome 5 Free";
-    font-size: 18px;
+    font-size: 1.8rem;
     color: var(--brown-highlight);
 }
 
-.btn { font-size: 16px; }
+.btn { font-size: 1.6rem; }
 
 
 
@@ -34,36 +33,35 @@ a { font-size: 1.6rem; }
 /* HERO - ==================================================== */
 .hero__header__h1 span {
     font-family: 'Trocchi', serif;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     font-size: 4rem;
 }
 
-.hero__header__p { font-size: 18px; }
+.hero__header__p { font-size: 1.8rem; }
 
 /* ABOUT - =================================================== */
 
 /* MENU - ==================================================== */
-.menu__container__item__h3 { font-size: 20px;  }
+.menu__container__item__h3 { font-size: 2rem;  }
 
 /* FOOTER - ================================================== */
-.footer * { font-size: 14px;   }
+.footer * { font-size: 1.4rem;   }
 
-.footer a { font-size: 12px }
+.footer a,
+.footer__right__text__p,
+.footer__copyright {  
+    font-size: 1.2rem; 
+}
 
-.footer__right__text__p { font-size: 12px; }
-
-.footer__copyright {    font-size: 12px; }
-
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 70rem) {
     .hero__header__h1 span {
         font-family: 'Trocchi', serif;
-        letter-spacing: 2px;
+        letter-spacing: .2rem;
         font-size: 3.5rem;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 50rem) {
 
     h1 { font-size: 5.61rem;  }
     

@@ -1,42 +1,40 @@
 
 section.about {
-    padding: 2rem 0;
     border: 2px solid var(--grey-dark);
 }
 
 .about {
     width: auto;
-    margin: 80px 0;
     display: flex;
 }
 
 .about-flex-padding-left,
 .about-flex-padding-right {
-    flex-basis: 93px;
+    flex-basis: 9.3rem;
     flex-shrink: 4;
     background-color: transparent;
 }
 
 .about__container {
-    flex-basis: 1000px;
+    flex-basis: 100rem;
     flex-grow: 1;
 }
 
 .about__header {
-    padding-bottom: 35px;
+    padding-bottom: 3.5rem;
 }
 
 .about__header__h2 {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .about__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    padding: 20px;
+    gap: 3rem;
+    padding: 2rem;
 }
 
 .about__content__left {
@@ -54,19 +52,23 @@ section.about {
 
 .about__content__right {
     width: 50%;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .about__content__right__p {
     line-height: 1.6;
-    margin: 15px 0;
+    margin: 1.5rem 0;
 }
 
 .about__btn {
-    padding: 9px 22px;
+    padding: .9rem 2.2rem;
 }
 
-@media screen and (max-width: 972px) {
+@media screen and (max-width: 60.75rem) {
+    .about__header {
+        padding-bottom: 2.5rem;
+    }
+    
     .about__content {
         align-items: stretch;
         gap: 0;
@@ -74,26 +76,30 @@ section.about {
 }
 
 
-@media screen and (max-width: 626px) {
+@media screen and (max-width: 39.125rem) {
 
     .about-flex-padding-left,
     .about-flex-padding-right {
-        width: 35px;
+        width: 3.5rem;
     }
 
     .about__container {
         max-width: 90%;
     }
 
+    .about__header {
+        padding-bottom: 0;
+    }
+    
     .about__header__h2 {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 3rem;
     }
 
     .about__content {
         flex-direction: column;
-        gap: 20px;
-        padding: 20px;
+        gap: 2rem;
+        padding: 2rem 0 0 0;
     }
 
     .about__content__left {
@@ -102,7 +108,7 @@ section.about {
 
     .about__content__right {
         width: 100%;
-        padding: 0;
+        padding: 1rem 0 1rem 0;
     }
 
 }

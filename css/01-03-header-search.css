@@ -14,15 +14,11 @@
     /* 1. create    2. hide    3. click button and show/hide */
     /* form initial height = 0  */
     /* when changes the height grows with fixed point at the top */
-    /* transform: scaleY(0);         */
-    /* transform-origin: top;  */
     opacity: 0;
-
     transform: scale(.7);
 }
 
 .header__search-form.active {
-    /* transform: scaleY(1); */
     transform: scale(1);
     opacity: 1;
 }
@@ -30,7 +26,6 @@
 .header__search-form input {
     flex: 1;
     height: 100%;
-    /* font-size: 1.6rem; */
     color: var(--grey-light);
     text-transform: none;
     background-color: inherit;
@@ -38,14 +33,13 @@
 
 .header__search-form label {
     cursor: pointer;  
-    /* font-size: 2.2rem; */
     height: 100%;
     display: flex;
     align-items: center;
 }
 
 
-@media screen and (max-width: 582px) {
+@media screen and (max-width: 36.375rem) {
     .header__search-form {
         position: absolute;
         top: 115%;

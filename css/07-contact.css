@@ -11,7 +11,7 @@
     flex: 1 1 45rem;
     width: 100%;
     object-fit: cover;
-    border: 20px solid var(--black);
+    border: 2rem solid var(--black);
 }
 
 .contact__form {
@@ -51,12 +51,12 @@
     transform: rotate(90deg);
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 46.25rem) {
     .contact__container {
         flex-wrap: wrap;
     }
 
     .contact__form {
-        padding: 2rem;
+        padding: 1rem;
     }
 }

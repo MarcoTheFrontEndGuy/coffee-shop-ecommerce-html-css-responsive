@@ -12,8 +12,8 @@
     flex-direction: column;
     align-items: center;
     min-height: 30rem;
-    border-radius: 10px; 
-    box-shadow: 0 0 5px 0px var(--grey-dark);
+    border-radius: 1rem; 
+    box-shadow: 0 0 .5rem 0 var(--grey-dark);
 }
 
 .review__text__and__quotes {

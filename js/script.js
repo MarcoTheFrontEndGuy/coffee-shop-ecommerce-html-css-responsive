@@ -31,9 +31,6 @@
         eachLink.addEventListener("click", nav_Link_Click_To_Remove_Cart_Search_MobileMenu);
     });
     
-    // Remove active class from cart, menu and search on scroll 
-    window.addEventListener("scroll", nav_Link_Click_To_Remove_Cart_Search_MobileMenu);
-
 // ===================================================================================================
 
     const cartContainer = document.querySelector('.header__cart');

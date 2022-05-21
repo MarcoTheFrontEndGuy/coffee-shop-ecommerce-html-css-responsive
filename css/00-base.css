@@ -16,7 +16,7 @@
     --brown-rusty-highlight: #AE4404;
 
     --white: #ffffff;
-    --border: 1px solid #4e4e4f; 
+    --border: .1rem solid #4e4e4f; 
 }
 
 * {
@@ -53,8 +53,8 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background-color: var(--black-01);
-    min-width: 314px;
-    max-width: 1400px;
+    min-width: 31.4rem;
+    max-width: 140rem; 
 }
 
 
@@ -79,17 +79,17 @@ section header h2 span {
     background-color: var(--brown-rusty-highlight);
     color: var(--white);
     padding: 1.2rem 3rem;
-    margin-top: 10px;
+    margin-top: .1rem;
     cursor: pointer;
-    box-shadow: 0 4px 3px var(--black);
+    box-shadow: 0 .4rem .3rem var(--black);
     position: relative;
     top: 0;
     transition: all .2s;
 }
 
 .btn:active {
-    top: 4px;
-    box-shadow: 0 0 3px var(--black); 
+    top: .4rem;
+    box-shadow: 0 0 .3rem var(--black); 
 }
 
 .btn:hover {
@@ -98,13 +98,26 @@ section header h2 span {
 
 
 /* media queries  */
-@media (max-width: 991px) {
+@media (max-width: 61.94rem) {
     .header {
         padding: 1.5rem 2rem;
     }
+
+    section header h2 {
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 2.5rem;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+
+    section header h2 {
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 0;
+    }
+
     #menu-btn {
         display: inline-block;
     }
@@ -113,7 +126,6 @@ section header h2 span {
         position: absolute;
         top: 100%;
         right: -100%;
-        /* background: var(--white); */
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
@@ -130,17 +142,4 @@ section header h2 span {
 
 }
 
-
-/* @media screen and (min-width: 627px) and (max-width: 1200px){
-    h1 { font-size: 6rem}
-    h2 { font-size: 4rem}
-    h3 { font-size: 3.4rem}
-}
-
-
-@media screen and (max-width: 626px) {
-    h1 { font-size: 4rem; }
-    h2 { font-size: 3.2rem; }
-    h3 { font-size: 2.8rem; }
-} */
 

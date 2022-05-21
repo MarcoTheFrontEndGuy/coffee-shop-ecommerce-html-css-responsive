@@ -9,7 +9,7 @@
 .products__container__product {
     text-align: center;
     border: var(--border);
-    border-radius: 8px;
+    border-radius: .8rem;
     border-color: var(--brown-darker);
     padding: 2rem;
     background-color: var(--black);
@@ -30,10 +30,6 @@
 
 .products__container__product:hover .products__container__product__icons a {
     color: var(--brown-rusty-highlight);
-}
-
-.products__container__product__icons a:hover {
-    /* background: var(--main-color); */
 }
 
 .products__container__product__image {
